@@ -4,3 +4,5 @@ textblob
 xlrd
 openpyxl
 nltk
+langdetect
+googletrans

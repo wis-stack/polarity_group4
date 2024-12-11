@@ -1,1 +1,23 @@
 #pip install googletrans==4.0.0-rc1 #install the library before importing
+
+from langdetect import detect
+
+text = "This is a sample text in English."
+language = detect(text)
+
+print {Detected Language:", language)
+
+from langdetect import detect 
+from googletans import Translator
+
+text = "This is a sample text in English."
+
+#Detect the language
+detected_lang = detect(text)
+
+#Translate to French
+translator = Translator()
+translated_text = translator.translate(text, src=detected_lang, dest='fr').text
+
+print("Detected Language:", detected_lang)
+print("Translated Text (to French):', translated_text)
